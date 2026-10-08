@@ -1,11 +1,17 @@
 import java.util.Scanner;
 class Cases{
     public static void main(String[] args){
+        int ticket = 1;
+        boolean exit = false;
+        while(!exit){
         Scanner sc = new Scanner(System.in);
+        System.out.println();
+        System.out.println("Ticket Number: " + ticket);
+        ticket += 1;
         System.out.println("Enter the Theater No.: ");
-        System.out.print("1. PVR\n2. Inox\n3. Rohini\n");
+        System.out.print("1. PVR\n2. Inox\n3. Rohini\n4. Exit\n");
         int theater = sc.nextInt();
-
+        
         switch(theater){
             case 1:{
                 System.out.println("You have selected PVR");
@@ -82,9 +88,14 @@ class Cases{
                 }
                 break;
             }
+            case 4:{
+                System.out.println("Exiting the program");
+                exit = true;
+                break;
+            }
             default:{
                 System.out.println("Invalid selection");
                 }
-        }
+        }}
     }
 }

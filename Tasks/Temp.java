@@ -8,14 +8,14 @@ public class Temp {
         System.out.print("Enter your choice: ");
         int choice = sc.nextInt();
         System.out.print("Enter temperature: ");
-        double temperature = sc.nextDouble();
+        double temp = sc.nextDouble();
 
         if (choice == 1) {
-            double fahrenheit = (temperature * 9 / 5) + 32;
-            System.out.println("Temperature in Fahrenheit: " + fahrenheit);
+            double fahrenheit = (temp * 9 / 5) + 32;
+            System.out.println("temperature in Fahrenheit: " + fahrenheit);
         } else if (choice == 2) {
-            double celsius = (temperature - 32) * 5 / 9;
-            System.out.println("Temperature in Celsius: " + celsius);
+            double celsius = (temp - 32) * 5 / 9;
+            System.out.println("temperature in Celsius: " + celsius);
         } else {
             System.out.println("Invalid choice.");
         }

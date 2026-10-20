@@ -1,0 +1,2 @@
+1,karthi,1,AIDS
+2,Sharan,2,CSE

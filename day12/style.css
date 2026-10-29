@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #222;
+    font-family: Arial, sans-serif;
+}
+
+.section1,
+.section4 {
+    align-items: center;
+    background: #f9a313;
+    display: flex;
+    justify-content: center;
+}
+
+.section1 {
+    border-top: 10px solid #222;
+    height: 95px;
+}
+
+.section2,
+.section3 {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 25px 6px;
+}
+
+.section3 {
+    position: relative;
+}
+
+.color-panel {
+    height: 62px;
+}
+
+.panel-red {
+    background: #ed4c3e;
+}
+
+.panel-green {
+    background: #2bc66f;
+}
+
+.panel-purple {
+    background: #9856b4;
+}
+
+.panel-cyan {
+    background: #0be1e6;
+}
+
+.panel-lime {
+    background: #6cf000;
+}
+
+.panel-blue {
+    background: #080995;
+}
+
+.slider-button {
+    align-items: center;
+    background: rgba(25, 25, 25, 0.65);
+    border: 0;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 2.5rem;
+    height: 64px;
+    justify-content: center;
+    line-height: 1;
+    padding: 0 0 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 64px;
+    z-index: 1;
+}
+
+.slider-button:hover,
+.slider-button:focus-visible {
+    background: rgba(25, 25, 25, 0.85);
+}
+
+.slider-button:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+}
+
+.previous {
+    left: 4.5%;
+}
+
+.next {
+    right: 4.5%;
+}
+
+.section4 {
+    height: 72px;
+}
+
+body > h2,
+body > center,
+body > p,
+body > article,
+body > div:last-child {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+}
+
+body > center {
+    margin-top: 2rem;
+}
+
+article img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .section2,
+    .section3 {
+        gap: 6px;
+        padding: 16px 4px;
+    }
+
+    .color-panel {
+        height: 46px;
+    }
+
+    .slider-button {
+        font-size: 2rem;
+        height: 48px;
+        width: 48px;
+    }
+
+    .previous {
+        left: 2%;
+    }
+
+    .next {
+        right: 2%;
+    }
+}

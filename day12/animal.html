@@ -1,99 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Animal Description</title>
+    <title>ShopZone - Online Shopping</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="section1">
-    </div>
 
-    <div class="section2">
-        <div class="color-panel panel-red"></div>
-        <div class="color-panel panel-green"></div>
-        <div class="color-panel panel-purple"></div>
-    </div>
+    <header>
+        <h2>ShopZone</h2>
+        <p>Your One-Stop Online Shopping Destination</p>
+    </header>
 
-    <div class="section3">
-        <button class="slider-button previous" type="button" aria-label="Previous animals">
-            <span aria-hidden="true">&#8249;</span>
-        </button>
-        <div class="color-panel panel-cyan"></div>
-        <div class="color-panel panel-lime"></div>
-        <div class="color-panel panel-blue"></div>
-        <button class="slider-button next" type="button" aria-label="Next animals">
-            <span aria-hidden="true">&#8250;</span>
-        </button>
-    </div>
+    <!-- Navigation Menu -->
+    <nav class="menu">
+        <a href="#electronics">Electronics</a>
+        <a href="#fashion">Fashion</a>
+        <a href="#accessories">Accessories</a>
+        <a href="page1.html">Cart 🛒</a>
+    </nav>
 
-    <div class="section4">
-    </div>
+    <main>
 
-    <center>
-        <h2>Animal Description</h2>
-    </center>
+        <!-- Electronics -->
+        <article id="electronics">
+            <h2>Smartphone</h2>
 
-    <p>This is an animal description page.</p>
+            <div class="image-container">
+                <img
+                    src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500"
+                    alt="Smartphone"
+                    width="300"
+                    height="250">
+            </div>
 
-    <article>
-        <div>
-            <center>
-                <a href="https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg?cs=srgb&dl=animal-animal-photography-big-cat-145939.jpg&fm=jpg">
-                    <img src="https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg?cs=srgb&dl=animal-animal-photography-big-cat-145939.jpg&fm=jpg"
-                         alt="Tiger"
-                         width="300"
-                         height="200">
-                </a>
-            </center>
-        </div>
+            <p>
+                Explore our latest smartphones featuring powerful processors,
+                high-quality cameras, long-lasting batteries, and stunning displays.
+                These smartphones are perfect for gaming, photography, entertainment,
+                and everyday communication.
+            </p>
 
-        <p>
-            The tiger is a powerful and majestic wild animal known for its strength,
-            speed, and beautiful orange coat with black stripes. It belongs to the
-            cat family and is one of the largest wild cats in the world. Tigers are
-            carnivores that primarily hunt deer, wild boar, and other animals. They
-            are excellent swimmers and usually live in forests, grasslands, and
-            mangrove swamps. Tigers are solitary animals that mark and defend their
-            territories. As an important part of the ecosystem, they help maintain
-            the balance of wildlife populations. However, habitat loss and illegal
-            poaching threaten their survival. Protecting tigers and their natural
-            habitats is essential for preserving biodiversity.
-        </p>
+            <h3>Price: ₹24,999</h3>
+            <button onclick="addToCart('Smartphone', 24999)">Add to Cart</button>
+        </article>
 
-        <center>
-            <img src="https://tse4.mm.bing.net/th/id/OIP.n5DkY4SvmbwI1vercogeYwHaE6?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-                 alt="Cheetah"
-                 width="300"
-                 height="200">
-        </center>
+        <hr>
 
-        <p>
-            The cheetah is the fastest land animal in the world, capable of reaching
-            speeds of up to 100–120 km/h over short distances. It has a slender body,
-            long legs, a small head, and a yellowish coat covered with black spots.
-            Cheetahs are carnivores that primarily hunt small to medium-sized animals,
-            such as gazelles and impalas. They are known for their incredible
-            acceleration, sharp eyesight, and distinctive black tear marks running
-            from their eyes to the sides of their mouths. Cheetahs mainly inhabit
-            grasslands and open savannas, where they use their speed to chase prey.
-            Unlike lions and tigers, cheetahs generally avoid direct confrontations
-            with larger predators. Habitat loss, human-wildlife conflict, and
-            declining prey populations threaten their survival. Protecting cheetahs
-            and their habitats is essential for maintaining biodiversity.
-        </p>
-    </article>
+        <!-- Fashion -->
+        <article id="fashion">
+            <h2>Casual T-Shirt</h2>
 
-    <div>
-        <p>Watch some animals live</p>
+            <div class="image-container">
+                <img
+                    src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500"
+                    alt="Casual T-Shirt"
+                    width="300"
+                    height="250">
+            </div>
 
-        <ul>
-            <li><a href ="https://www.primevideo.com/detail/0GBXEJQS71UL1I6E2U39DTQZ1J/">Lion</a></li>
-            <li><a href = "https://www.airtelxstream.in/movies/siruthai/HOTSTAR_DTH_MOVIE_234">Cheeta</a></li>
-            <li><a href = "https://www.sunnxt.com/tamil-movie-puli-2015/detail/7224">Tiger</a></li>
-            <li><a href = "https://www.airtelxstream.in/movies/manam-kothi-paravai/SUNNXT_MOVIE_7022">Bird</a></li>
-            <li><a href = "https://www.linkedin.com/in/diyadhivakar05/">Karthi & diya</a></li>
-        </ul>
-    </div>
+            <p>
+                Discover comfortable and stylish casual T-shirts made from
+                breathable fabric. Available in different colours and sizes,
+                they are suitable for everyday wear, college, travel, and outings.
+            </p>
 
+            <h3>Price: ₹599</h3>
+            <button onclick="addToCart('Casual T-Shirt', 599)">Add to Cart</button>
+        </article>
+
+        <hr>
+
+        <!-- Accessories -->
+        <article id="accessories">
+            <h2>Wireless Headphones</h2>
+
+            <div class="image-container">
+                <img
+                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+                    alt="Wireless Headphones"
+                    width="300"
+                    height="250">
+            </div>
+
+            <p>
+                Enjoy your favourite music with wireless headphones offering
+                immersive sound, comfortable ear cushions, and convenient
+                wireless connectivity. They are ideal for music, gaming,
+                online classes, and entertainment.
+            </p>
+
+            <h3>Price: ₹1,999</h3>
+            <button onclick="addToCart('Wireless Headphones', 1999)">Add to Cart</button>
+        </article>
+
+        <hr>
+
+    </main>
 </body>
-</html> 
+</html>

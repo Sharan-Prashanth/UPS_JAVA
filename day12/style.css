@@ -1,149 +1,133 @@
-* {
-    box-sizing: border-box;
-}
-
+/* General styling */
 body {
-    margin: 0;
-    color: #222;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    line-height: 1.6;
 }
 
-.section1,
-.section4 {
-    align-items: center;
-    background: #f9a313;
+/* Header */
+header {
+    background-color: #232f3e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Navigation menu using Flexbox */
+.menu {
     display: flex;
     justify-content: center;
-}
-
-.section1 {
-    border-top: 10px solid #222;
-    height: 95px;
-}
-
-.section2,
-.section3 {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 25px 6px;
-}
-
-.section3 {
-    position: relative;
-}
-
-.color-panel {
-    height: 62px;
-}
-
-.panel-red {
-    background: #ed4c3e;
-}
-
-.panel-green {
-    background: #2bc66f;
-}
-
-.panel-purple {
-    background: #9856b4;
-}
-
-.panel-cyan {
-    background: #0be1e6;
-}
-
-.panel-lime {
-    background: #6cf000;
-}
-
-.panel-blue {
-    background: #080995;
-}
-
-.slider-button {
     align-items: center;
-    background: rgba(25, 25, 25, 0.65);
-    border: 0;
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    display: flex;
-    font-size: 2.5rem;
-    height: 64px;
-    justify-content: center;
-    line-height: 1;
-    padding: 0 0 5px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 64px;
-    z-index: 1;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: #131921;
+    padding: 15px;
 }
 
-.slider-button:hover,
-.slider-button:focus-visible {
-    background: rgba(25, 25, 25, 0.85);
+/* Navigation links */
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
 }
 
-.slider-button:focus-visible {
-    outline: 3px solid #fff;
-    outline-offset: 3px;
+/* Hover effect */
+.menu a:hover {
+    background-color: #37475a;
+    border-radius: 5px;
 }
 
-.previous {
-    left: 4.5%;
-}
-
-.next {
-    right: 4.5%;
-}
-
-.section4 {
-    height: 72px;
-}
-
-body > h2,
-body > center,
-body > p,
-body > article,
-body > div:last-child {
-    margin-left: auto;
-    margin-right: auto;
+/* Main content */
+main {
     max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
 }
 
-body > center {
-    margin-top: 2rem;
+/* Product headings */
+article h2 {
+    text-align: center;
+    color: #232f3e;
 }
 
-article img {
+/* Center product images using Flexbox */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.image-container img {
     max-width: 100%;
-    object-fit: cover;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
-@media (max-width: 600px) {
-    .section2,
-    .section3 {
-        gap: 6px;
-        padding: 16px 4px;
-    }
+/* Product descriptions */
+article p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
 
-    .color-panel {
-        height: 46px;
-    }
+/* Product price */
+article h3 {
+    color: #b12704;
+    text-align: center;
+}
 
-    .slider-button {
-        font-size: 2rem;
-        height: 48px;
-        width: 48px;
-    }
+/* Buttons */
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #ffd814;
+    border: 1px solid #fcd200;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
 
-    .previous {
-        left: 2%;
-    }
+button:hover {
+    background-color: #f7ca00;
+}
 
-    .next {
-        right: 2%;
-    }
+/* Shopping cart */
+#cart {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+#cart h2 {
+    text-align: center;
+}
+
+#cart-items {
+    padding-left: 20px;
+}
+
+#cart-items li {
+    margin: 12px 0;
+}
+
+#cart-items button {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 12px;
+}
+
+/* Footer */
+footer {
+    background-color: #232f3e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
 }
